@@ -1,0 +1,23 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Web Playground By Ritu</title>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div id="topBar"><h1>Web Playground By Ritu</h1></div>
+    <div id="bodyContainer">
+        <textarea name="htmlTextArea" id="htmlTextArea" cols="30" rows="10"></textarea>
+
+        <iframe id="output"></iframe>
+        <script>
+            $("textarea").on('change keyup paste', function(){
+                $("iframe").contents().find("html").html($("#htmlTextArea").val()); 
+            });  
+        </script>
+    </div>
+</body>
+</html>

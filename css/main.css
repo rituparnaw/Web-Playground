@@ -1,0 +1,18 @@
+#topBar{
+    background-color: aqua;
+    text-align:center;
+}
+body{
+    margin: 0px;
+}
+textarea{
+    width:50%;
+    height: 100%;
+    resize: none;
+    margin: 0px;
+}
+iframe{
+    float: right;
+    width: 49%;
+    height: 100%;
+}
